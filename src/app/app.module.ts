@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { ProfileSummaryComponent } from './header/profile-summary/profile-summary.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,8 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatButtonModule
-  ],
+   ],
   providers: [],
   bootstrap: [NavbarComponent]//AppComponent]
 })
