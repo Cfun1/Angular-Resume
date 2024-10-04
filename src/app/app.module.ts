@@ -3,24 +3,31 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './header/navbar/navbar.component';
-import { ProfileSummaryComponent } from './header/profile-summary/profile-summary.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
- 
+import { HeaderComponent } from './header/header.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderModule } from './header/header.module';
+import { MainContentModule } from './main-content/main-content.module';
+import { FooterModule } from './footer/footer.module';
+   
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ProfileSummaryComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     NgbModule,
+    HeaderModule,
+    MainContentModule,
+    FooterModule
    ],
   providers: [],
-  bootstrap: [NavbarComponent]//AppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

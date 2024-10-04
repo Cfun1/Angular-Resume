@@ -3,6 +3,13 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@assets/*": ["./src/assets/*"]  // Create a shortcut for the 'assets' folder
+    },
+    "resolveJsonModule": true,   // Enable JSON imports
+    "esModuleInterop": true,      // Ensure compatibility with ES modules
+    "allowSyntheticDefaultImports": true, // This ensures default import compatibility
+
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

@@ -1,0 +1,23 @@
+[
+  {
+    "degree": "High School",
+    "major": "Science and mathematics",
+    "period": "Jan 2021 - Dec 2024",
+    "institution": "Schoold of secondary board",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a pellentesque dolor. Quisque congue et sapien vitae ornare. Duis convallis aliquet velit non sodales. Vivamus fermentum massa at lorem varius, accumsan rutrum lorem efficitur. Morbi elementum scelerisque diam sed tristique. Suspendisse sit amet nibh suscipit, mollis risus congue, dignissim tortor. Curabitur id ex viverra, vulputate mauris ut, convallis lectus. Donec eu felis sagittis, ullamcorper dui quis, lobortis leo. Nunc vel porta velit. Vivamus scelerisque rhoncus est. Donec imperdiet ante ut sapien consectetur sollicitudin."
+  },
+  {
+    "degree": "Bachelor's Degree",
+    "major": "Bachelor of computer science",
+    "period": "Jan 2021 - Dec 2024",
+    "institution": "University of computer science",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a pellentesque dolor. Quisque congue et sapien vitae ornare. Duis convallis aliquet velit non sodales. Vivamus fermentum massa at lorem varius, accumsan rutrum lorem efficitur. Morbi elementum scelerisque diam sed tristique. Suspendisse sit amet nibh suscipit, mollis risus congue, dignissim tortor. Curabitur id ex viverra, vulputate mauris ut, convallis lectus. Donec eu felis sagittis, ullamcorper dui quis, lobortis leo. Nunc vel porta velit. Vivamus scelerisque rhoncus est. Donec imperdiet ante ut sapien consectetur sollicitudin."
+  },
+  {
+    "degree": "Master's Degree",
+    "major": "Master of information technology",
+    "period": "Jan 2021 - Dec 2024",
+    "institution": "University of computer science",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a pellentesque dolor. Quisque congue et sapien vitae ornare. Duis convallis aliquet velit non sodales. Vivamus fermentum massa at lorem varius, accumsan rutrum lorem efficitur. Morbi elementum scelerisque diam sed tristique. Suspendisse sit amet nibh suscipit, mollis risus congue, dignissim tortor. Curabitur id ex viverra, vulputate mauris ut, convallis lectus. Donec eu felis sagittis, ullamcorper dui quis, lobortis leo. Nunc vel porta velit. Vivamus scelerisque rhoncus est. Donec imperdiet ante ut sapien consectetur sollicitudin."
+  }
+]

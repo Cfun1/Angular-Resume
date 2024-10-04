@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header.component';
 import { ProfileSummaryComponent } from './profile-summary/profile-summary.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []//NavbarComponent] //ProfileSummaryComponent
+  declarations: [HeaderComponent, ProfileSummaryComponent],
+  exports: [HeaderComponent]
 })
 export class HeaderModule { }

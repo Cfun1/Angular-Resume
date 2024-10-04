@@ -1,7 +1,11 @@
 <div class="profile-summary">
-  <img>
-  <h2>{{name}}</h2>
-  <h3>{{role}}</h3>
-  <button  class="btn btn-success btn-lg">Basic</button>
-  <button class="btn btn-success btn-lg" >Basic</button>
+  <h2>{{ name }}</h2>
+  <h3>{{ role }}</h3>
+
+  <button class="btn btn-success btn-lg" (click)="hireClicked()">
+    hire Me
+  </button>
+  <button class="btn btn-success btn-lg" (click)="downloadCvClicked()">
+    Download CV
+  </button>
 </div>

@@ -1,8 +1,13 @@
 .profile-summary {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  background: url("https://www.csmoesac.qc.ca/assets/medias/images/_1200x630_crop_center-center_none/programmeur_csmoesac.jpg");
+  width: 100vw;
+}
+
+* {
+  color: aliceblue;
+}
