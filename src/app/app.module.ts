@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderModule } from './header/header.module';
 import { MainContentModule } from './main-content/main-content.module';
 import { FooterModule } from './footer/footer.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
    
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterModule } from './footer/footer.module';
     NgbModule,
     HeaderModule,
     MainContentModule,
-    FooterModule
+    FooterModule,
+    FontAwesomeModule
    ],
   providers: [],
   bootstrap: [AppComponent]
