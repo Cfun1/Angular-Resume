@@ -11,8 +11,8 @@
 -   [ ] Custom directives
 -   [ ] Add material package
     -   [ ] use scroll spy on main navigation
-    -   [ ] replace skills: badge with chips
-    -   [ ] replace boot strap buttons with material button
+    -   [x] replace skills: badge with chips
+    -   [ ] replace bootstrap buttons with material button
     -   [ ] refactor experience or/and education to use timeline ?
     -   [ ] Replace fontawesome icon with mat-icon
     -   [ ] Snackbar when download CV clicked
