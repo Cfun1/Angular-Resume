@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Experience } from 'src/app/models/experience';
-import experiencesData from '@assets/work-experience-data.json';
-import aboutData from '@assets/about-data.json';
-import educationData from '@assets/education-data.json';
+import { IExperience } from 'src/app/models/experience.interface';
+import { MockDataStoreService } from '../services/mock-data-store.service';
+import { IEducation } from '../models/education.interface';
 
 @Component({
 	selector: 'app-main-content',
@@ -10,29 +9,16 @@ import educationData from '@assets/education-data.json';
 	styleUrls: ['./main-content.component.css'],
 })
 export class MainContentComponent implements OnInit {
-	constructor() {}
+	constructor(private dataService: MockDataStoreService) {}
 
-	experiences!: any; //Experience[];
+	experiences!: IExperience[]; //Experience[];
 	about!: any; //Experience[];
-	educations!: any; //Experience[];
+	educations!: IEducation[]; //Experience[];
 
 	ngOnInit() {
 		//   debugger; // This will pause execution and allow you to inspect variables
-
-		this.experiences = experiencesData; //this.getExperiences();
-		this.about = aboutData; //this.getExperiences();
-		this.educations = educationData; //this.getExperiences();
-
-		console.log(this.about);
-		// this.getExperience();
-	}
-
-	getExperiences() {
-		this.experiences = experiencesData;
-		alert(`${this.experiences}  `);
-	}
-
-	getExperience(): Experience[] {
-		return (experiencesData as Experience[]).map((experience) => new Experience(experience.role, experience.period, experience.company, experience.content));
+		this.about = this.dataService.getAbout();
+		this.educations = this.dataService.getEducation();
+		this.experiences = this.dataService.getExperience();
 	}
 }
