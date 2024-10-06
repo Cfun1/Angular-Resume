@@ -1,0 +1,18 @@
+-   [ ] **Styling**
+    -   [ ] revise CSS media query, and relative units to ensure design responsivness
+    -   [ ] clamp long paras in mobile. introduce show moe button
+    -   [ ] refactor basic info section to a table or a grid for better syling control
+-   [ ] complete skills section component
+-   [ ] create contact section component
+-   [ ] create portfolio section component
+-   [ ] Component communication @input @output EventEmitter()
+-   [ ] ViewChild
+-   [ ] HosBinding() and HostListener()
+-   [ ] Custom directives
+-   [ ] Add material package
+    -   [ ] use scroll spy on main navigation
+    -   [ ] replace skills: badge with chips
+    -   [ ] replace boot strap buttons with material button
+    -   [ ] refactor experience or/and education to use timeline ?
+    -   [ ] Replace fontawesome icon with mat-icon
+    -   [ ] Snackbar when download CV clicked

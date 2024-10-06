@@ -1,0 +1,11 @@
+.badge {
+	font-size: large;
+	padding: 0.75em;
+}
+
+.skills-wrapper {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	text-align: center;
+}

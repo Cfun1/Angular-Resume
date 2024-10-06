@@ -4,17 +4,19 @@ html,
 body {
 	height: 100%;
 	scroll-behavior: smooth;
+	background-color: rgb(239, 246, 255);
 }
 body {
 	margin: 0;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
-/* TODO
-    Custom directives
-    Component communication @input @output ViewChild EventEmitter()
-
-*/
 :root {
 	--main-bg-color: #1976d2;
+}
+
+@media (min-width: 768px) {
+	.mobile-only {
+		display: none;
+	}
 }

@@ -1,60 +1,73 @@
 .main-wrapper {
-  padding-top: 40px;
-  margin: auto;
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
+	padding-top: 40px;
+	margin: auto;
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
 }
 
 section {
-  margin: 1.5em;
-  padding: 2.5em;
+	margin: 1.5em;
+	padding: 2.5em;
+	background-color: white;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 1em;
+	text-align: center;
+	margin-bottom: 1em;
 }
 
 .experience-section {
-  flex: auto;
+	flex: auto;
 }
 
 .info-field {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .about-section {
-  display: flex;
-  gap: 40px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
+	display: flex;
+	gap: 40px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
 }
 
 .about-section-presentation {
-  flex-grow: 1;
-  flex-basis: 0;
+	flex-grow: 1;
+	flex-basis: 0;
 }
 
 .about-section-infos {
-  flex-grow: 1;
-  flex-basis: 0;
-  align-self: flex-start;
-  margin-left: auto;
+	flex-grow: 1;
+	flex-basis: 0;
+	align-self: flex-start;
+	margin-left: auto;
 }
 
 h4 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .card-label {
-  background: var(--main-bg-color);
-  padding: 20px 15px;
+	background: var(--main-bg-color);
+	padding: 20px 15px;
 }
 
 #about {
-  scroll-margin-top: 2em;
+	scroll-margin-top: 2em;
 }
+
+/*
+.card-text {
+	line-clamp: 1;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin: 1rem;
+}
+*/

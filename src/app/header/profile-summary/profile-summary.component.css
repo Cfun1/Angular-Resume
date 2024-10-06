@@ -1,13 +1,69 @@
 .profile-summary {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  padding: 40px;
-  align-items: center;
-  background: url("https://www.csmoesac.qc.ca/assets/medias/images/_1200x630_crop_center-center_none/programmeur_csmoesac.jpg");
-  width: 100vw;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 40px;
+	align-items: center;
+	background: no-repeat center url('https://www.csmoesac.qc.ca/assets/medias/images/_1200x630_crop_center-center_none/programmeur_csmoesac.jpg');
+	background-size: cover;
+	width: 100%;
 }
 
 * {
-  color: aliceblue;
+	color: aliceblue;
 }
+
+.btns-wrapper {
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	margin-top: 3em;
+	gap: 5em;
+}
+
+.btns-wrapper button {
+	padding: 0.75em 1.5em;
+	flex: 1 0 1;
+	border-radius: 30px;
+}
+
+/*
+button {
+	background: rgb(51, 84, 229);
+	position: relative;
+	padding: 15px 50px;
+	overflow: hidden;
+}
+
+
+button:active:before {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+button:before {
+	content: attr(data-hover);
+	position: absolute;
+	top: 1.1em;
+	left: 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: 0.8em;
+	opacity: 0;
+	transform: translate(-100%, 0);
+	transition: all 0.05s ease-in-out;
+}
+
+button:active div {
+	opacity: 0;
+	transform: translate(100%, 0);
+}
+button div {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: 0.8em;
+	transition: all 0.05s ease-in-out;
+}
+*/
