@@ -37,6 +37,24 @@ button[mat-flat-button] mat-icon {
 	margin-left: 0.5em;
 }
 
+@media only screen and (max-width: 768px) {
+	.profile-summary {
+		height: 30vh;
+	}
+
+	.btns-wrapper button {
+		padding: 0.25em 0.5em;
+		flex: 1 0 1;
+		border-radius: 10px;
+		font-size: x-small;
+	}
+
+	.btns-wrapper {
+		margin-top: 0.5em;
+		gap: 3em;
+	}
+}
+
 /*/*/
 /*
 button {

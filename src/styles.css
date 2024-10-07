@@ -9,6 +9,7 @@ body {
 body {
 	margin: 0;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
+	font-size: 1rem;
 }
 
 :root {
@@ -21,8 +22,38 @@ body {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 	.laptop-only {
 		display: none !important;
+	}
+
+	.flex-column-on-mobile {
+		flex-direction: column;
+	}
+	html {
+		font-size: 75%;
+	}
+
+	h1 {
+		font-size: 2rem; /* 90% of 32px = 28.8px */
+	}
+
+	h2 {
+		font-size: 1.8rem; /* 90% of 28.8px */
+	}
+	h3 {
+		font-size: 1.75rem; /* 28px */
+	}
+
+	h4 {
+		font-size: 1.5rem; /* 24px */
+	}
+
+	h5 {
+		font-size: 1.25rem; /* 20px */
+	}
+
+	h6 {
+		font-size: 1rem; /* 16px */
 	}
 }

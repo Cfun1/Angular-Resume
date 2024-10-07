@@ -1,6 +1,6 @@
 -   [ ] **Styling**
     -   [ ] revise CSS media query, and relative units to ensure design responsivness
-    -   [ ] clamp long paras in mobile. introduce show moe button
+    -   [ ] clamp long paras in mobile. introduce show more button
     -   [ ] refactor basic info section to a table or a grid for better syling control
 -   [ ] complete skills section component
 -   [ ] create contact section component
@@ -12,7 +12,7 @@
 -   [ ] Add material package
     -   [ ] use scroll spy on main navigation
     -   [x] replace skills: badge with chips
-    -   [ ] replace bootstrap buttons with material button
+    -   [x] replace bootstrap buttons with material button
     -   [ ] refactor experience or/and education to use timeline ?
-    -   [ ] Replace fontawesome icon with mat-icon
+    -   [x] Replace fontawesome icon with mat-icon. using both for now
     -   [ ] Snackbar when download CV clicked

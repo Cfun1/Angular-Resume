@@ -1,16 +1,16 @@
+.skills-wrapper {
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+}
 mat-chip {
 	font-size: large;
 	padding: 1em;
+	margin: 0 1em !important;
 }
 mat-chip fa-icon {
-	margin-left: 15px;
 	font-size: 1.25em;
-}
-
-.skills-wrapper {
-	display: flex;
-	justify-content: space-around;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 1.5em;
+	margin-left: 0.5em;
 }

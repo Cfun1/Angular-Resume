@@ -31,23 +31,19 @@ section {
 .about-section {
 	display: flex;
 	align-items: stretch;
-	gap: 40px;
+	gap: 2em;
 	justify-content: space-between;
 }
 
-@media only screen and (max-width: 768px) {
-	.about-section {
-		flex-direction: column;
-	}
-}
-
 .about-section-presentation {
-	flex-grow: 1;
-	flex-basis: 0;
+	flex: 1 0 0;
 }
 
 .about-section-infos {
+	flex-grow: 1;
+	flex-basis: 0;
 	padding: 0 2em 0 2em;
+	line-height: 2em;
 }
 
 h4 {
@@ -64,6 +60,15 @@ h4 {
 	scroll-margin-top: 2em;
 }
 
+@media only screen and (max-width: 768px) {
+	section:first-of-type {
+		margin-top: 1em;
+	}
+
+	.main-wrapper {
+		width: 95vw;
+	}
+}
 /*
 .card-text {
 	line-clamp: 1;
