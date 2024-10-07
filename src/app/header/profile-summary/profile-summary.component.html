@@ -2,12 +2,13 @@
 	<h2>{{ name }}</h2>
 	<h3>{{ role }}</h3>
 
-	<!-- <button data-hover="Thank you!" class="btn btn-success btn-lg" (click)="hireClicked()"><div>hire Me</div></button> -->
 	<div class="btns-wrapper">
-		<button class="btn btn-primary btn-lg" (click)="hireClicked()">hire Me</button>
-		<button class="btn btn-primary btn-lg" (click)="downloadCvClicked()">
-			Download CV
-			<fa-icon [icon]="faFileAlt"></fa-icon>
+		<!-- class="btn btn-primary btn-lg"  -->
+		<button mat-flat-button (click)="hireClicked()">hire Me</button>
+		<button mat-flat-button (click)="downloadCvClicked()">
+			<span>Download CV</span>
+			<mat-icon>description</mat-icon>
+			<!-- <fa-icon [icon]="faFileAlt"></fa-icon> -->
 		</button>
 	</div>
 </div>

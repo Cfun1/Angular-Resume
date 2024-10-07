@@ -1,25 +1,29 @@
-<app-skills></app-skills>
+<!-- <app-skills></app-skills> -->
 
-<div class="d-block d-md-none">
-	<!-- This content will only show on mobile devices (small screens) -->
-	<p>Visible only on mobile devices</p>
-</div>
+<!-- <div class="d-block d-md-none"> -->
+<!-- This content will only show on mobile devices (small screens) -->
+<!-- <p>Visible only on mobile devices</p>
+</div> -->
 
 <div class="main-wrapper">
 	<section id="about" *ngIf="about !== null; else noExperience" class="about-section">
-		<div class="about-section-presentation">
-			<h3 class="section-title">About</h3>
-			<p>{{ about.presentation }}</p>
+		<div class="card about-section-presentation">
+			<div class="card-body">
+				<h3 class="card-title section-title">About</h3>
+				<p class="card-text">{{ about.presentation }}</p>
+			</div>
 		</div>
 
-		<div class="about-section-infos">
-			<h3>Basic Information</h3>
-			<ul class="list-unstyled">
-				<li *ngFor="let info of about.infos | keyvalue">
-					<span class="info-field">{{ info.key }}:</span>
-					{{ info.value }}
-				</li>
-			</ul>
+		<div class="card about-section-infos">
+			<div class="card-body">
+				<h3 class="card-title">Basic Information</h3>
+				<ul class="card-text list-unstyled">
+					<li *ngFor="let info of about.infos | keyvalue">
+						<span class="info-field">{{ info.key }}:</span>
+						{{ info.value }}
+					</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 

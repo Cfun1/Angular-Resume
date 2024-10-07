@@ -1,6 +1,10 @@
-.badge {
+mat-chip {
 	font-size: large;
-	padding: 0.75em;
+	padding: 1em;
+}
+mat-chip fa-icon {
+	margin-left: 15px;
+	font-size: 1.25em;
 }
 
 .skills-wrapper {
@@ -8,4 +12,5 @@
 	justify-content: space-around;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 1.5em;
 }
