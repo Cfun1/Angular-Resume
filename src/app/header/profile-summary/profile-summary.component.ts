@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
 	selector: 'app-profile-summary',
@@ -7,8 +6,6 @@ import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
 	styleUrls: ['./profile-summary.component.css'],
 })
 export class ProfileSummaryComponent implements OnInit {
-	faFileAlt = faFileAlt;
-
 	constructor() {}
 
 	name: string = 'Cfun1';

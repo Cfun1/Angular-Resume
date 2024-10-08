@@ -30,5 +30,6 @@ export class AppModule {
 	constructor(library: FaIconLibrary) {
 		// Add all icons to the library for global use
 		library.addIconPacks(fas, far, fab);
+		//usage:  <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
 	}
 }
