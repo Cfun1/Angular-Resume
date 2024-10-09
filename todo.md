@@ -10,7 +10,7 @@
     -   [ ] Component communication @output EventEmitter()
     -   [ ] 2 way binding
     -   [ ] ViewChild
-    -   [ ] Custom directives with HosBinding() and HostListener()
+    -   [ ] Custom directives with HostBinding() and HostListener()
     -   [ ] leverage reusable components, to be consumed by education and work experience sections
     -   [x] ~~Component communication @input~~
     -   [x] ~~property binding~~

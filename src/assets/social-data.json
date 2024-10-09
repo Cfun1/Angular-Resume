@@ -1,0 +1,7 @@
+[
+  { "family": "fab", "icon": "linkedin", "link": "https://linkedin.com/" },
+  { "family": "fab", "icon": "github", "link": "https://github.com/cfun1" },
+  { "family": "fab", "icon": "stack-overflow", "link": "https://stackoverflow.com/users/5228202/cfun" },
+  { "family": "fab", "icon": "twitter", "link": "https://twitter.com/" },
+  { "family": "fas", "icon": "envelope", "link": "mailto:redacted-privacy@redacted-privacy.com" }
+]
