@@ -1,0 +1,9 @@
+#contact:hover {
+	cursor: pointer;
+}
+
+#contact {
+	margin: 30px 0 0 0;
+	padding-bottom: 5px;
+	text-align: center;
+}
