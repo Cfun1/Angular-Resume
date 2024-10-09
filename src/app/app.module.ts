@@ -12,19 +12,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MaterialModule } from './material/material.module';
-import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 /*Import all icons rather than, importing each sing one in component and assign to field, caveat may increase bundle size*/
 import { fas } from '@fortawesome/free-solid-svg-icons'; // Import all solid icons
 import { far } from '@fortawesome/free-regular-svg-icons'; // Import all regular icons
 import { fab } from '@fortawesome/free-brands-svg-icons'; // Import all brand icons
 
+import { SharedModule } from './shared/shared.module';
+
 @NgModule({
 	declarations: [AppComponent, NavbarComponent],
-	imports: [BrowserModule, AppRoutingModule, NgbModule, HeaderModule, MainContentModule, FooterModule, BrowserAnimationsModule, FontAwesomeModule],
+	imports: [BrowserModule, AppRoutingModule, NgbModule, HeaderModule, MainContentModule, FooterModule, BrowserAnimationsModule, SharedModule],
 	providers: [],
 	bootstrap: [AppComponent],
-	exports: [MatChipsModule, MaterialModule, FontAwesomeModule, MatIconModule],
+	exports: [MatChipsModule, MaterialModule, MatIconModule],
 })
 export class AppModule {
 	constructor(library: FaIconLibrary) {

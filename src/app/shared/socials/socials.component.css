@@ -1,0 +1,8 @@
+.socials-wrapper {
+	display: flex;
+	gap: 2em;
+}
+fa-icon:hover {
+	color: rgb(59, 199, 246);
+	cursor: pointer;
+}

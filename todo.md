@@ -11,6 +11,7 @@
     -   [ ] 2 way binding
     -   [ ] ViewChild
     -   [ ] Custom directives with HosBinding() and HostListener()
+    -   [ ] leverage reusable components, to be consumed by education and work experience sections
     -   [x] ~~Component communication @input~~
     -   [x] ~~property binding~~
     -   [x] ~~event binding~~
