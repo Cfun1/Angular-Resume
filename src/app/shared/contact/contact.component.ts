@@ -1,5 +1,5 @@
-import { JsonPipe } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
 	selector: 'app-contact',
@@ -7,13 +7,20 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 	styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-	@ViewChild('contactFormTitle', { read: ElementRef }) title!: ElementRef;
+	@ViewChild('contactFormTitle') title!: ElementRef;
+	@ViewChild('contactForm') contactForm!: NgForm;
+
+	name: string = '';
+	subject: string = '';
+	email: string = '';
+	message: string = '';
+
 	constructor() {}
 
 	ngOnInit() {}
 
 	onSubmit() {
-		// Handle form submission logic here
+		console.log('Form Submitted:', this.contactForm.value);
 		alert('Form submitted successfully!');
 	}
 

@@ -4,12 +4,12 @@
     -   [x] ~~refactor basic info section to a table or a grid for better syling control. Used bootstrap row/columns~~
 -   [ ] Components/content templates
     -   [ ] complete skills section component
-    -   [ ] create contact section component
+    -   [x] create contact section component
     -   [ ] create portfolio section component
 -   [ ] Usage of Angular concepts:
     -   [ ] Component communication @output EventEmitter()
-    -   [ ] 2 way binding
-    -   [ ] ViewChild
+    -   [x] 2 way binding
+    -   [x] ViewChild
     -   [ ] Custom directives with HostBinding() and HostListener()
     -   [ ] leverage reusable components, to be consumed by education and work experience sections
     -   [x] ~~Component communication @input~~

@@ -3,20 +3,20 @@
 	<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
 		<div class="form-group">
 			<!-- <fa-icon [icon]="['far', 'user']"></fa-icon> -->
-			<input type="text" name="name" ngModel placeholder="Name" required />
+			<input type="text" name="name" [(ngModel)]="name" placeholder="Name" required />
 		</div>
 		<div class="form-group">
 			<!-- <fa-icon [icon]="['far', 'file-alt']"></fa-icon> -->
-			<input type="text" name="subject" ngModel placeholder="Subject" required />
+			<input type="text" name="subject" [(ngModel)]="subject" placeholder="Subject" required />
 		</div>
 
 		<div class="form-group">
-			<input type="email" name="email" ngModel placeholder="E-mail" required />
+			<input type="email" name="email" [(ngModel)]="email" placeholder="E-mail" required />
 			<!-- <fa-icon [icon]="['far', 'envelope']"></fa-icon> -->
 		</div>
 
 		<div class="form-group">
-			<textarea name="message" ngModel placeholder="Your Message" required></textarea>
+			<textarea name="message" [(ngModel)]="message" placeholder="Your Message" required></textarea>
 		</div>
 
 		<button mat-flat-button type="submit" [disabled]="!contactForm.form.valid">Send</button>
