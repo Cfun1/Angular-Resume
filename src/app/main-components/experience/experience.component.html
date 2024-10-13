@@ -1,0 +1,31 @@
+<section id="experience" class="experience-section shadow">
+	<div *ngIf="experiences !== undefined; else noExperience">
+		<h3 class="section-title">Work Experience</h3>
+
+		<ng-container *ngFor="let experience of experiences">
+			<div class="card mb-3">
+				<div class="row g-0 m-0">
+					<div class="col-md-3 text-white text-center card-label d-flex flex-column justify-content-center">
+						<h5>{{ experience.company }}</h5>
+						{{ experience.period }}
+					</div>
+
+					<div class="col-md-9">
+						<div class="card-body">
+							<h4 class="card-title">{{ experience.role }}</h4>
+							<p class="card-text">
+								{{ experience.content }}
+							</p>
+							<!-- <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</ng-container>
+	</div>
+	<ng-template #noExperience>
+		<p style="color: red">No experiences available.</p>
+	</ng-template>
+</section>

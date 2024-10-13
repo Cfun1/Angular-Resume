@@ -1,0 +1,27 @@
+@import url('../main-common.css');
+
+.info-field {
+	font-weight: bold;
+}
+
+.about-section {
+	display: flex;
+	align-items: stretch;
+	gap: 2em;
+	justify-content: space-between;
+}
+
+.about-section-presentation {
+	flex: 1 0 0;
+}
+
+.about-section-infos {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 0 2em 0 2em;
+	line-height: 2em;
+}
+
+#about {
+	scroll-margin-top: 3em;
+}

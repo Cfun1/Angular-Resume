@@ -3,10 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderModule } from './header/header.module';
-import { MainContentModule } from './main-content/main-content.module';
 import { FooterModule } from './footer/footer.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,10 +19,11 @@ import { far } from '@fortawesome/free-regular-svg-icons'; // Import all regular
 import { fab } from '@fortawesome/free-brands-svg-icons'; // Import all brand icons
 
 import { SharedModule } from './shared/shared.module';
+import { MainModule } from './main-components/main.module';
 
 @NgModule({
 	declarations: [AppComponent, NavbarComponent],
-	imports: [BrowserModule, AppRoutingModule, NgbModule, HeaderModule, MainContentModule, FooterModule, BrowserAnimationsModule, SharedModule],
+	imports: [BrowserModule, AppRoutingModule, NgbModule, HeaderModule, FooterModule, MainModule, BrowserAnimationsModule, SharedModule],
 	providers: [],
 	bootstrap: [AppComponent],
 	exports: [MatChipsModule, MaterialModule, MatIconModule],

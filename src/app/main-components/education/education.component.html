@@ -1,0 +1,33 @@
+<section class="education-section shadow">
+	<div *ngIf="educations !== undefined; else noEducation">
+		<h3 class="section-title">Education</h3>
+
+		<ng-container *ngFor="let education of educations">
+			<div class="card mb-3">
+				<div class="row g-0 m-0">
+					<div class="col-md-3 text-white text-center card-label d-flex flex-column justify-content-center">
+						<h5>{{ education.degree }}</h5>
+						{{ education.period }}
+					</div>
+
+					<div class="col-md-9">
+						<div class="card-body">
+							<h4 class="card-title">{{ education.major }}</h4>
+							<p class="card-text">
+								<small class="text-muted">{{ education.institution }}</small>
+							</p>
+
+							<p class="card-text">
+								{{ education.content }}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ng-container>
+	</div>
+
+	<ng-template #noEducation>
+		<p style="color: red">No experiences available.</p>
+	</ng-template>
+</section>

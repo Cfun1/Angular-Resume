@@ -5,9 +5,11 @@
 -   [ ] Components/content templates
     -   [ ] complete skills section component
     -   [x] create contact section component
+    -   [ ] Single responsibility components
     -   [ ] create portfolio section component
 -   [ ] Usage of Angular concepts:
     -   [ ] Component communication @output EventEmitter()
+    -   [x] use router outlet and routing concepts
     -   [x] 2 way binding
     -   [x] ViewChild
     -   [ ] Custom directives with HostBinding() and HostListener()
@@ -18,6 +20,7 @@
     -   [x] ~~Services + dependency injection~~
 -   [ ] Material package
     -   [ ] use scroll spy on main navigation
+    -   [ ] behavior objects ?
     -   [ ] refactor experience or/and education to use timeline ?
     -   [ ] Snackbar when download CV clicked
     -   [x] ~~replace skills: badge with chips~~
