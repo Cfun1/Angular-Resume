@@ -10,6 +10,11 @@
 -   [ ] Usage of Angular concepts:
     -   [ ] Component communication @output EventEmitter()
     -   [x] use router outlet and routing concepts
+        -   [x] Pass static data to route
+        -   [ ] Route parameters
+        -   [ ] Query params & fragments
+        -   [ ] Nested routing
+        -   [ ] Guards (canActivate, canDeactivate)
     -   [x] 2 way binding
     -   [x] ViewChild
     -   [ ] Custom directives with HostBinding() and HostListener()

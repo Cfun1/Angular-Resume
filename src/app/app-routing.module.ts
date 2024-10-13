@@ -16,10 +16,8 @@ const routes: Routes = [
 	// { path: 'portfolio', component: MainContentComponent },
 	{ path: 'contact', component: ContactComponent },
 	// { path: 'contact/:id', component: ContactComponent },	///dynamic path, ../contact/anything
-	{ path: '**', component: NotFoundComponent }, //not found path/route
+	{ path: '**', component: NotFoundComponent, data: { message: "Sorry, this page doesn't exist!" } }, //not found path/route
 ];
-
-/*	//{ path: '**', component: NotFoundComponent }, //not found path/route*/
 
 @NgModule({
 	imports: [RouterModule.forRoot(routes)],
