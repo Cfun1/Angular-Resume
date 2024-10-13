@@ -6,6 +6,7 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { AboutComponent } from './main-components/about/about.component';
 import { ExperienceComponent } from './main-components/experience/experience.component';
 import { EducationComponent } from './main-components/education/education.component';
+import { GuardDeactivateService } from './services/guard-deactivate.service';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/skills', pathMatch: 'full' },
@@ -14,7 +15,7 @@ const routes: Routes = [
 	{ path: 'education', component: EducationComponent },
 	{ path: 'experience', component: ExperienceComponent },
 	// { path: 'portfolio', component: MainContentComponent },
-	{ path: 'contact', component: ContactComponent },
+	{ path: 'contact', component: ContactComponent, canDeactivate: [GuardDeactivateService] },
 	// { path: 'contact/:id', component: ContactComponent },	///dynamic path, ../contact/anything
 	{ path: '**', component: NotFoundComponent, data: { message: "Sorry, this page doesn't exist!" } }, //not found path/route
 ];

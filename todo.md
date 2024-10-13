@@ -14,7 +14,9 @@
         -   [ ] Route parameters
         -   [ ] Query params & fragments
         -   [ ] Nested routing
-        -   [ ] Guards (canActivate, canDeactivate)
+        -   [x] Guards
+            -   [ ] canActivate
+            -   [x] canDeactivate
     -   [x] 2 way binding
     -   [x] ViewChild
     -   [ ] Custom directives with HostBinding() and HostListener()
