@@ -25,14 +25,14 @@
 
 <ng-template #dialog let-c="close" let-d="dismiss">
 	<div class="modal-header">
-		<h4 class="modal-title">Confirm leaving contact?</h4>
-		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+		<h4 class="modal-title">Confirmation required</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d(true)"></button>
 	</div>
 	<div class="modal-body">
-		<p>Are you sure you want to leave this page?</p>
+		<p>Contact form not empty !</p>
 	</div>
 	<div class="modal-footer justify-content-center">
-		<button type="button" class="btn btn-outline-secondary me-3" (click)="c(false)">No</button>
-		<button type="button" class="btn btn-primary" (click)="c(true)">Yes</button>
+		<button type="button" class="btn btn-outline-secondary" (click)="c(false)">Stay</button>
+		<button type="button" class="btn btn-primary" (click)="c(true)">Leave</button>
 	</div>
 </ng-template>

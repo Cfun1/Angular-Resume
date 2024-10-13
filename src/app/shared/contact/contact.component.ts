@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { from, Observable, tap } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { CanComponentDeactivate } from 'src/app/services/guard-deactivate.service';
 
 @Component({
@@ -21,25 +21,42 @@ export class ContactComponent implements OnInit, CanComponentDeactivate {
 
 	constructor(private modalService: NgbModal) {}
 
-	canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
-		const modalRef: NgbModalRef = this.modalService.open(this.dialogTemplate, {
-			backdrop: 'static',
-			keyboard: false,
-		});
-
-		return from(
-			modalRef.result.then(
-				(result) => result === 'Yes', // Return true if 'Yes' is clicked
-				() => false // Return false on dismiss or 'No'
-			)
-		);
-	}
-
 	ngOnInit() {}
 
 	onSubmit() {
 		console.log('Form Submitted:', this.contactForm.value);
 		alert('Form submitted successfully!');
+	}
+
+	canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
+		if (this.isFormEmpty()) {
+			return true;
+		} else {
+			const modalRef: NgbModalRef = this.modalService.open(this.dialogTemplate, {
+				backdrop: 'static',
+				keyboard: false,
+			});
+
+			// modalRef.result.then(
+			// 	(result) => {
+			// 		// Handle the "close" result here
+			// 		console.log('Closed with:', result);
+			// 	},
+			// 	(reason) => {
+			// 		// Handle the "dismiss" reason here
+			// 		console.log('Dismissed with:', reason);
+			// 	}
+			// );
+
+			return from(modalRef.result);
+		}
+	}
+
+	isFormEmpty(): boolean {
+		const isEmpty = Object.values(this.contactForm.controls).every((control) => {
+			return !control.value || control.value === '';
+		});
+		return isEmpty;
 	}
 
 	animate() {
@@ -50,7 +67,5 @@ export class ContactComponent implements OnInit, CanComponentDeactivate {
 		setTimeout(() => {
 			element.classList.remove('shake');
 		}, 500); // Duration of the shake animation
-
-		console.log();
 	}
 }

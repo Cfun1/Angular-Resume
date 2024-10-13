@@ -9,7 +9,7 @@ import { EducationComponent } from './main-components/education/education.compon
 import { GuardDeactivateService } from './services/guard-deactivate.service';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/skills', pathMatch: 'full' },
+	{ path: '', redirectTo: '/about', pathMatch: 'full' },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'skills', component: SkillsComponent },
 	{ path: 'education', component: EducationComponent },
