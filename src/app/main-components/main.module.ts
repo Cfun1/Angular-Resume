@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MaterialModule } from '../material/material.module';
 import { EducationComponent } from './education/education.component';
 import { SharedModule } from '../shared/shared.module';
 
