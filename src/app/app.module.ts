@@ -8,9 +8,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from '@angular/material/icon';
-import { MatChipsModule } from '@angular/material/chips';
-import { MaterialModule } from './material/material.module';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 /*Import all icons rather than, importing each sing one in component and assign to field, caveat may increase bundle size*/
@@ -26,7 +23,7 @@ import { MainModule } from './main-components/main.module';
 	imports: [BrowserModule, AppRoutingModule, NgbModule, HeaderModule, FooterModule, MainModule, BrowserAnimationsModule, SharedModule],
 	providers: [],
 	bootstrap: [AppComponent],
-	exports: [MatChipsModule, MaterialModule, MatIconModule],
+	exports: [],
 })
 export class AppModule {
 	constructor(library: FaIconLibrary) {
